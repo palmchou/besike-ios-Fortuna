@@ -20,7 +20,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        println("viewDidLoad quotationTextView: \(quotationTextView)")
         delegate = UIApplication.sharedApplication().delegate as AppDelegate
         quotationTextView.editable = false
         quotationTextView.selectable = false
@@ -30,11 +29,6 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        println("awakeFromNib quotationTextView: \(quotationTextView)")
     }
     
     func displayRandomQuotes() {
